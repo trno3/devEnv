@@ -4,9 +4,11 @@
    "description": "JavaScript development environment",
    "scripts": {
       "prestart": "node buidScripts/startMessage.js",
-      "start": "node buidScripts/srcServer.js",
+      "start": "npm-run-all --parallel security-check open:src",
+      "open:src": "node buidScripts/srcServer.js",
       "security-check": "nsp check",
-      "share": "lt -p 3000 -s trno3 -o"
+      "localtunnel": "lt -p 3000 -s trno3 -o",
+      "share": "npm-run-all --parallel open:src localtunnel"
    },
    "author": "Toni H",
    "license": "MIT",
