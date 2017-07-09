@@ -3,9 +3,9 @@
    "version": "1.0.0",
    "description": "JavaScript development environment",
    "scripts": {
-      "prestart": "node buidScripts/startMessage.js",
+      "prestart": "babel-node buidScripts/startMessage.js",
       "start": "npm-run-all --parallel security-check open:src",
-      "open:src": "node buidScripts/srcServer.js",
+      "open:src": "babel-node buidScripts/srcServer.js",
       "security-check": "nsp check",
       "localtunnel": "lt -p 3000 -s trno3 -o",
       "share": "npm-run-all --parallel open:src localtunnel"
