@@ -6,6 +6,7 @@
       "prestart": "babel-node buidScripts/startMessage.js",
       "start": "npm-run-all --parallel security-check open:src",
       "open:src": "babel-node buidScripts/srcServer.js",
+      "lint": "esw webpack.config.* buildScripts src --color",
       "security-check": "nsp check",
       "localtunnel": "lt -p 3000 -s trno3 -o",
       "share": "npm-run-all --parallel open:src localtunnel"
