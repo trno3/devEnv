@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+#js.map files
+*.js.map
+
+#dist files
+dist/
