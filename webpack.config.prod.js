@@ -46,7 +46,8 @@ export default {
                 minifyCSS: true,
                 minifyURLs: true
             },
-            inject: true
+            inject: true,
+            trackJSToken: '25523effd4174052af876dd94235426a'
         }),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin()
