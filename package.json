@@ -51,6 +51,8 @@
     "json-schema-faker": "0.3.6",
     "json-server": "0.8.22",
     "karma": "^1.7.0",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.0",
     "karma-webpack": "^2.0.4",
     "localtunnel": "1.8.1",
